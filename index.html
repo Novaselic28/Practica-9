@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgreen;
+}
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color:#19e73c ;
+    color: #800011;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #3778ad;
+    color: #b64112;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #ace60d;
+}
+.aside {
+    background-color: #F5DEB3;
+    padding: 150px;
+    color: #000080;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-repeat: no-repeat;
+    background-image: url("img/PIKA.png");
+}
+
+.footer {
+    background-color: #FF6347;
+    color: #000080;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+
+    
+   
+@media only screen and (max-width: 500px) {
+    .aside {
+       
+       background-image: url("img/images.jpg"); 
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>UNIDAD 2</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+    <li><a href="https://novaselic28.github.io/Practica-1/">Practica 1</a></li>
+    <li><a href="https://novaselic28.github.io/Practica-2/">Practica 2</a></li>
+    <li><a href="https://novaselic28.github.io/Practica-3/">Practica 3</a></li>
+    <li><a href="https://novaselic28.github.io/Practica-4/">Practica 4</a></li>
+    <li><a href="https://novaselic28.github.io/Practica-5/">Practica 5</a></li>
+    <li><a href="https://novaselic28.github.io/Practica-6/">Practica 6</a></li>
+    <li><a href="https://novaselic28.github.io/Practica-7/">Practica 7</a></li>
+    <li><a href="https://novaselic28.github.io/Practica-8/">Practica 8</a></li>
+  </ul>
+</div>
+
+<div class="col-6">
+  <h1><center>MI CV</center></h1>
+
+  <video width="200" height="200" autoplay controls>
+      <source src="media/micv.mp4" type="video/mp4">
+  </video><br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30200.053078946086!2d-97.09297106759888!3d18.886786835839526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c4e2c6c485ea91%3A0xd692c2e7b56a2fc!2sOte.%205%2010%2C%20Potrerillo%203%20El%20Bosque%2C%2094450%20Ixtaczoquitl%C3%A1n%2C%20Ver.!5e0!3m2!1ses-419!2smx!4v1676919350734!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  <h2><center>datos</center></h2>
+       
+      <hr><h3>Datos personales</h3>
+      <ol><li type="square"> Nombre completo: Haid krist Novaselic Perez</li>
+          <li type="square">Fecha de naciemiento: 28/07/22</li>
+          <li type="square">Lugar de naciemiento: Orizaba ver.</li></ol>
+       <h3>Formaci&oacute;n academica</h3>
+       <ol><li type="square">2016.2018 tecnica 74 </li>
+          <li type="square">2018-2020 Conalep 252</li>
+          <li type="square">2020-2024 TECM Orizaba</li></ol>
+       <h3>Esperiencia laboral</h3>
+       <ol><li type="square"> 2018-2019 Ayudante de contador</li>
+          <li type="square">2019-2020 Acomodador </li>
+          <li type="square">2020-2023 Cajero</li></ol></div>
+
+<div class="col-3 right">
+    
+<div class="aside">
+
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Cambiar el tama&ntilde;o de la ventana del navegador para ver c&oacute;mo responde el contenido al redimensionamiento.</p>
+</div>
+
+</body>
+</html>
